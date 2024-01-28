@@ -21,14 +21,14 @@ for (let i = 0; i < pets.length; i++) {
 */
 
 pets.sort();
-console.log(pets.sort());
+console.log(pets);
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
-const Reverse = pets.reverse();
-console.log(Reverse);
+pets.reverse();
+console.log(pets);
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
@@ -61,8 +61,9 @@ const cars = [
 ];
 
 const licensePlate = ["2FAST4U", "88MPH", "2EZ4ME"];
-for (i=0; i < cars.length;i++) {
-  cars[i].licensePlate = licensePlate;
+
+for (let i = 0; i < cars.length; i++) {
+  cars[i].licensePlate = licensePlate[i];
 }
 
 console.log(cars);
@@ -98,18 +99,27 @@ console.log(justTrims);
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 for (let i = 0; i < cars.length; i++) {
-  if (cars[i].color.startsWith('b')) {
-    console.log('Fizz'); 
+  const firstLetter = cars[i].color.charAt(0).toLowerCase();
+
+  if (firstLetter === "b")  {
+    console.log("Fizz");
   } else {
-    console.log('Buzz'); 
+    console.log("Buzz");
   }
 }
-console.log(cars)
+
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
 const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
+
+let i = 0;
+
+while (numericArray[i] !== 32) {
+  console.log(numericArray[i]);
+  i++;
+}
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
@@ -117,3 +127,77 @@ const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
+const newArray = [];
+
+for (let i = 0; i < charactersArray.length; i++) {
+  switch (charactersArray[i]) {
+    case 'a':
+      newArray.push(1);
+      break;
+    case 'b':
+      newArray.push(2);
+      break;
+    case 'c':
+      newArray.push(3);
+      break;
+    case 'd':
+      newArray.push(4);
+      break;
+    case 'e':
+      newArray.push(5);
+      break;
+    case 'f':
+      newArray.push(6);
+      break;
+    case 'g':
+      newArray.push(7);
+      break;
+    case 'h':
+      newArray.push(8);
+      break;
+    case 'i':
+      newArray.push(9);
+      break;
+    case 'l':
+      newArray.push(10);
+      break;
+    case 'm':
+      newArray.push(11);
+      break;
+    case 'n':
+      newArray.push(12);
+      break;
+    case 'o':
+      newArray.push(13);
+      break;
+    case 'p':
+      newArray.push(14);
+      break;
+    case 'q':
+      newArray.push(15);
+      break;
+    case 'r':
+      newArray.push(16);
+      break;
+    case 's':
+      newArray.push(17);
+      break;
+    case 't':
+      newArray.push(18);
+      break;
+    case 'u':
+      newArray.push(19);
+      break;
+    case 'v':
+      newArray.push(20);
+      break;
+    case 'z':
+        newArray.push(21);
+        break;
+    default:
+      newArray.push(null);
+  }
+ }
+
+
+console.log(newArray);
