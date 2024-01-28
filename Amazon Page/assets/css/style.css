@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  background-color:#E9EDEE; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center;
+}
+
+
+.logo {
+  background-color: rgb(37, 43, 63);
+  text-align: left;
+  padding: 1em 32px;
+}
+
+.logo-top {
+  width: 10%;
+  padding-inline: 1px;
+  height: auto;
+}
+
+
+.utentbar li {
+  list-style: none;
+  display: inline-block;
+}
+
+.utentbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.utentbar {
+  background-color: rgb(54, 71, 87);
+  margin: 0;
+  text-align: left;
+}
+
+ul * {
+  padding: 3px;
+}
+
+ul {
+  padding-left: 15px;
+  padding-block: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+
+li{
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+
+p {
+  background-color: rgb(251, 99, 0);
+  padding-block: 6px;
+  margin-block: 25px;
+  margin-inline: 40px;
+}
+
+#shop {
+  text-align: center;
+  color: white;
+}
+
+.gift {
+  background-size: cover;
+  text-align: center;
+  color: white;
+  margin-inline: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-block: 25px;
+  background-image: url(../images/bg-image.png);
+  background-size: 92% 63%;
+  background-repeat: repeat;
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+
+.cards {
+  background-color: white;
+  margin-block: 25px;
+  margin-inline: 40px;
+}
+
+
+.cards-title{
+  text-align: left;
+  margin-left: 0.5em;
+}
+.schede {
+  text-align: center;
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  display: inline-block;
+  margin-inline: 8px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.151);
+  margin-bottom: 20px;
+}
+
+.tot-img {
+  margin-inline: 70px;
+}
+
+
+.bot img {
+  width: 92%;
+  text-align: center;
+  margin-inline: 40px;
+  margin-bottom: 20px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+figcaption a {
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(13, 99, 112);
+}
+
+.bot {
+  margin-bottom: 30px;
+}
+
+#logo-foot {
+  background-color: rgb(37, 43, 63);
+  text-align: center;
+  padding-inline: 20px;
+  padding-block: 10px;
+}
+
+#logo-foot img {
+  width: 15%;
+    padding: 40px;
+    margin: 40px ;
+}
+
+.backtotop {
+  background-color: rgb(54, 71, 87);
+  margin: 0;
+  text-align: center;
+  padding-block: 17px;
+}
+
+.backtotop a {
+  color: white;
+}
+
+h2 a {
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(13, 99, 112);
+}
+
+h2 {
+  margin-left: 80px;
+  padding-top: 24px;
+}
+
